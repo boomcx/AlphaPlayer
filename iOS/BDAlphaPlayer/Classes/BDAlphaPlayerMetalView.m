@@ -191,6 +191,8 @@
         [self addSubview:self.mtkView];
         
         self.metalRenderer = [[BDAlphaPlayerMetalRenderer alloc] initWithMetalKitView:self.mtkView];
+        // 控制
+        self.metalRenderer.isAlphaLeft = NO;
         __weak __typeof(self) weakSelf = self;
         self.metalRenderer.framePlayDurationCallBack = ^(NSTimeInterval duration) {
             if (weakSelf && [weakSelf.delegate respondsToSelector:@selector(frameCallBack:)]) {

@@ -112,6 +112,7 @@
         { { -1.0,  1.0, 0.0, 1.0 },  { 0.f, 0.f } },
         { {  1.0,  1.0, 0.0, 1.0 },  { 1.f, 0.f } },
     };
+
     self.vertices = [self.mtkView.device newBufferWithBytes:quadVertices
                                                      length:sizeof(quadVertices)
                                                     options:MTLResourceStorageModeShared];

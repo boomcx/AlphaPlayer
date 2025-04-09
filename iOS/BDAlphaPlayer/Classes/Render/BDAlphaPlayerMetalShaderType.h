@@ -31,8 +31,9 @@ typedef enum BDAlphaPlayerVertexInputIndex
 typedef enum BDAlphaPlayerFragmentBufferIndex
 {
     BDAlphaPlayerFragmentInputIndexMatrix     = 0,
+    BDAlphaPlayerFragmentBufferAlphaPostion     = 1,
 } BDAlphaPlayerFragmentBufferIndex;
-
+ 
 
 typedef enum BDAlphaPlayerFragmentTextureIndex
 {
